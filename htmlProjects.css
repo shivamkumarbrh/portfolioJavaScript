@@ -54,6 +54,8 @@ table a i{
 .connected {
     display: block;
     width: 100%;
+    position: absolute;
+    bottom: 0px;
     box-sizing: border-box;
     background-color: black;
     color: white;
@@ -78,4 +80,14 @@ table a i{
 .connected a i {
     margin: 0px 5px;
     font-size: 20px;
+}
+
+
+/* media query */
+
+@media screen and (max-width:600px) {
+    .connected{
+        position: relative;
+        bottom: auto;
+    }
 }
